@@ -75,11 +75,11 @@ The `employee_data.csv` file contains the following columns:
 Visualizations:
 
 #### **1. Distribution of Employees by Gender (`gender_distribution.png`)**
-
 - **Analysis:** Pie chart showing gender distribution: 45% Male, 45% Female, 10% Other. Indicates a balanced gender representation with a notable presence of "Other" gender identities.
 - **Good:** Reflects diversity in gender representation.
 - **Bad:** The "Other" category may need further breakdown for more detailed analysis.
   
+![gender_distribution](https://github.com/user-attachments/assets/a3ce8fea-43be-44fb-b4ad-5b0718c9a23c)
 
 
 #### **2. Distribution of Employees by Education Level (`education_distribution.png`)**
@@ -87,35 +87,51 @@ Visualizations:
 - **Good:** Highlights the educational attainment of the workforce.
 - **Bad:** Limited categories may not capture all educational backgrounds.
 
+  ![education_distribution](https://github.com/user-attachments/assets/558fdcc7-6aec-4485-89bc-4b383c9cde18)
+
+
 #### **3. Distribution of Employees by City (Top 10) (`city_distribution.png`)**
 - **Analysis:** Bar chart showing the top 10 cities: Springfield (9.8%), Atlanta (9.0%), Columbus (8.9%), etc. Indicates a concentration of employees in certain urban areas.
 - **Good:** Identifies geographic distribution of employees.
 - **Bad:** Only top 10 cities are shown, potentially missing smaller but significant clusters.
+![city_distribution](https://github.com/user-attachments/assets/1eb8951a-5981-4b09-8e3b-96af80e42571)
+
+
 
 #### **4. Performance Score Distribution (`performance_distribution.png`)**
 - **Analysis:** Histogram with KDE showing performance scores, right-skewed with a mean around 75. Most employees score above 60, indicating generally good performance.
 - **Good:** Reflects overall employee performance trends.
 - **Bad:** Skewness may indicate bias in performance evaluations.
+![performance_distribution](https://github.com/user-attachments/assets/9b4e9075-d4d3-4dbd-9838-2fbd9a0395b0)
+
 
 #### **5. Distribution of Employees by Employee Level (`employee_level_distribution.png**)**
 - **Analysis:** Pie chart showing employee levels: 60% Senior, 20% Mid, 19.9% Entry. Suggests a top-heavy organization with many experienced employees.
 - **Good:** Highlights seniority distribution.
 - **Bad:** High proportion of Senior employees may indicate limited growth opportunities for Entry-level staff.
+![employee_level_distribution](https://github.com/user-attachments/assets/31ae14ce-ce0b-43f6-a9e4-ccdda8457e77)
+
 
 #### **6. Distribution of Employees by Department (`department_distribution.png`)**
 - **Analysis:** Bar chart showing department distribution: Fairly even across departments like Operations, Security, HHRR, etc. (each ~5-6% of total employees). Indicates a balanced departmental structure.
 - **Good:** Reflects organizational diversity in departments.
 - **Bad:** Even distribution may not reflect real-world organizational structures.
+![department_distribution](https://github.com/user-attachments/assets/4efc6569-831f-4034-b152-3c3386876c41)
+
 
 #### **7. Salary Distribution (`salary_distribution.png`)**
 - **Analysis:** Histogram with KDE showing salary distribution, right-skewed with a mean around $65,000. Salaries range from $30,000 to $195,061.88, with a peak around $50,000.
 - **Good:** Identifies salary trends and outliers.
 - **Bad:** Skewness may indicate salary inequity.
+![salary_distribution](https://github.com/user-attachments/assets/957e9c2d-1c83-40a5-aadb-0bb3aa807884)
+
 
 #### **8. Salary vs. Age by Gender (`salary_vs_age.png`)**
 - **Analysis:** Scatter plot showing salary vs. age by gender. No strong correlation between age and salary. Men, women, and others have similar salary distributions.
 - **Good:** Validates lack of age-salary correlation.
 - **Bad:** Dense plot makes it hard to identify specific trends.
+![salary_vs_age](https://github.com/user-attachments/assets/b4215b92-a4c0-4000-9f23-82141c59443b)
+
 
 #### **9. Days of Service vs. Vacation Days by Employee Level (`days_service_vs_vacation.png`)**
 - **Analysis:** Scatter plot showing days of service vs. vacation days, colored by employee level. Senior employees have more days of service and slightly more vacation days.
@@ -126,30 +142,34 @@ Visualizations:
 - **Analysis:** Bar chart showing state distribution: Fairly even across states like WA, NY, GA, etc. Reflects a geographically diverse workforce.
 - **Good:** Identifies geographic spread of employees.
 - **Bad:** Even distribution may not reflect real-world patterns.
+![state_distribution](https://github.com/user-attachments/assets/acb604c8-d73f-4a26-ad95-e85ed61d4eac)
+
 
 #### **11. Distribution of Employees by Work Location (`work_location_distribution.png`)**
 - **Analysis:** Pie chart showing work location: 34.5% Office, 32.8% Remote, 32.7% Hybrid. Indicates a balanced approach to work arrangements.
 - **Good:** Reflects modern work trends.
 - **Bad:** May oversimplify complex work arrangements.
+![work_location_distribution](https://github.com/user-attachments/assets/e19a8e66-08b6-4360-990d-a99749021daf)
+
 
 #### **12. Distribution of Employees by Shift (`shift_distribution.png`)**
 - **Analysis:** Pie chart showing shift distribution: 34.8% Day, 34.6% Night, 30.6% Flexible. Suggests flexibility in scheduling.
 - **Good:** Highlights shift diversity.
 - **Bad:** Even distribution may not reflect operational needs.
+![shift_distribution](https://github.com/user-attachments/assets/4277e113-621e-4e19-8bde-b69dc30b78a6)
+
 
 #### **13. Distribution of Employees by Status (`status_distribution.png`)**
 - **Analysis:** Pie chart showing status: 76.5% Active, 13.5% Inactive, 10.0% Leave. Most employees are active, as expected.
 - **Good:** Reflects employment status distribution.
 - **Bad:** Limited insight into reasons for Inactive/Leave status.
+![status_distribution](https://github.com/user-attachments/assets/95f23c4c-7537-4a60-af3b-ac83d3c14b64)
 
-#### **14. Performance Score Distribution by Gender (`gender_performance_distribution.png`)**
-- **Analysis:** Box plot showing performance scores by gender. All genders have similar median scores (~75), with slight variations in spread.
-- **Good:** Validates lack of gender bias in performance scores.
-- **Bad:** Outliers may indicate inconsistencies in evaluation.
+
 
 ### Errors Detected
 - **Unrealistic Values:**
-  - Employees under 18: 18 rows (e.g., EMP000000000007, EMP000000000010).
+  - Employees under 18: None detected.
   - Negative Salaries: None detected in this dataset.
   - Invalid Performance Scores: None detected (all within 0-100).
   - Negative Vacation/Sick Days: None detected.
