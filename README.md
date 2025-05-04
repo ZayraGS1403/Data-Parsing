@@ -121,6 +121,8 @@ Visualizations:
 #### **9. Days of Service vs. Vacation Days by Employee Level (`days_service_vs_vacation.png`)**
 - **Analysis:** Scatter plot showing days of service vs. vacation days, colored by employee level. Senior employees have more days of service and slightly more vacation days.
 - **Good:** Highlights relationship between tenure and benefits.
+![days_service_vs_vacation](https://github.com/user-attachments/assets/f5a449cf-3177-482c-b416-d1140d4c5e55)
+
 
 #### **10. Distribution of Employees by State (`state_distribution.png`)**
 - **Analysis:** Bar chart showing state distribution: Fairly even across states like WA, NY, GA, etc. Reflects a geographically diverse workforce.
