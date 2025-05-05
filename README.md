@@ -157,5 +157,22 @@ Visualizations:
 - **Future Dates:** None detected for `birth_date`, `hire_date`, or `last_review_date`.
 - **Inconsistent Days of Service:** None detected with the adjusted threshold (>30 days difference).
 
+## Tests
+```
+coverage run -m unittest scripts.test_analyse
+```
 
+```
+coverage report -m
+```
+
+```
+Name                      Stmts   Miss  Cover   Missing
+-------------------------------------------------------
+scripts\__init__.py           0      0   100%
+scripts\analyse.py          367     91    75%   49, 64, 78, 83, 88, 118, 124, 129, 135, 147, 167, 199-201, 207-208, 224-225, 241-242, 254-256, 266-267, 282-283, 298-299, 311-313, 327-328, 348-349, 365-366, 386-387, 408-409, 429-430, 446-447, 463-464, 480-481, 494-495, 511-513, 515-517, 519-521, 527-561, 563
+scripts\test_analyse.py     126      2    98%   268, 272
+-------------------------------------------------------
+TOTAL                       493     93    81%
+```
 
